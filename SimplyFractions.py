@@ -9,55 +9,6 @@ from streamlit_option_menu import option_menu
 st.set_page_config(page_title="SimplyFractions", page_icon="😮‍💨", layout="wide")
 
 # ----------------------------
-# CSS
-# ----------------------------
-
-st.markdown('''
-<style>
-.katex-html {
-    text-align: left;
-}
-</style>''',
-unsafe_allow_html=True
-)
-
-st.markdown(
-    """
-    <style>
-    body#my-body {
-        background-color: #1E1E1E;
-        color: #FFFFFF;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True,
-)
-
-#def local_css(file_name):
-
-#    with open(file_name) as f:
-#        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-
-#def local_css(file_name):
-
-#    with open(file_name) as f:
-#        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-
-#local_css("style/style.py")
-
-st.markdown(
-    """<style>
-        .thick-divider {
-            border-top: 5px solid #999;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-    </style>
-    """,
-    unsafe_allow_html=True,
-)
-
-# ----------------------------
 # DEFINE FUNCION FOR SIMPLIFY FRACTIONS
 # ----------------------------
 
@@ -67,7 +18,7 @@ def simplify(num, den) -> tuple:
 
     for divider in range(np.minimum(num,den),1,-1):
         if (num/divider).is_integer() and (den/divider).is_integer():
-            print(divider)
+            st.write("÷ " + str(divider) + " (Highest Common Factor)")
             num = num/divider
             den = den/divider
             break
