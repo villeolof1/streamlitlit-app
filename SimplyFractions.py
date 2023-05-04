@@ -10,6 +10,7 @@ from PIL import Image
 st.set_page_config(page_title="SimplyFractions", page_icon="😮‍💨", layout="wide")
 
 fracsimpim = Image.open("FractionSimplifiedImage.png")
+pizzasimp = Image.open("PizzaSimplifyImage.png")
 # ----------------------------
 # DEFINE FUNCION FOR SIMPLIFY FRACTIONS
 # ----------------------------
@@ -67,6 +68,7 @@ if selected == "Home":
         """)
     with col2:
         st.image(fracsimpim)
+        st.image(pizzasimp)
 
 # ----------------------------
 # STREAMLIT PAGE BELOW
