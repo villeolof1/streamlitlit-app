@@ -104,7 +104,7 @@ if selected == "Simplify Fractions":
         num_simple, den_simple = simplify(num, den)
         num_simple = int(num_simple)
         den_simple = int(den_simple)
-        st.latex(r'\frac{%s}{%s}' % (num_simple, den_simple), style="text-align: left")
+        st.latex(r'\frac{%s}{%s}' % (num_simple, den_simple))
 
         st.write("")
         st.write("")
