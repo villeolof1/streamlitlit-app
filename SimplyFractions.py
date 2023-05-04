@@ -11,6 +11,17 @@ st.set_page_config(page_title="SimplyFractions", page_icon="😮‍💨", layout
 
 fracsimpim = Image.open("FractionSimplifiedImage.png")
 pizzasimp = Image.open("PizzaSimplifyImage.png")
+
+
+#Use local CSS
+def local_css(file_name):
+
+    with open(file_name) as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+local_css("style/style.py")
+
+
 # ----------------------------
 # DEFINE FUNCION FOR SIMPLIFY FRACTIONS
 # ----------------------------
