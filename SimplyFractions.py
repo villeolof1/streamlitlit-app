@@ -24,16 +24,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-
-st.markdown("""
-    <style>
-        .streamlit-latex {
-            text-align: left;
-        }
-    </style>
-        """, 
-    unsafe_allow_html=True,
-)
+st.markdown('<hr class="thick-divider">', unsafe_allow_html=True)
 
 
 
