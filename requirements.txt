@@ -1,4 +1,4 @@
 streamlit
 numpy
 streamlit_option_menu
-PIL, Image
+Pillow
