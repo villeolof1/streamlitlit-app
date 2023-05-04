@@ -24,8 +24,6 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.markdown('<hr class="thick-divider">', unsafe_allow_html=True)
-
 
 
 #Use local CSS
