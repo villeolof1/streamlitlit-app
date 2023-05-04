@@ -37,12 +37,30 @@ with st.sidebar:
 if selected == "Home":
     st.title("Simply Simplifying Fractions")
     st.write("""
-    Welcome to our website, where you can easily and quickly simplify fractions!
-Are you struggling with reducing fractions to their simplest form? Do you find yourself spending too much time trying to simplify fractions by hand? Our website is here to help!
-With our user-friendly interface, you can input any fraction and simplify it within seconds. Our tool can simplify fractions with both whole numbers and decimals, and it can handle any size of fraction, no matter how large or small.
-Our simplification process follows standard mathematical rules and ensures the most simplified form of the fraction. This makes it a valuable tool for students, teachers, and anyone who needs to simplify fractions on a regular basis.
-Best of all, our website is completely free to use, and there is no need to download any software. Simply visit our website and simply start simplifying fractions right away!
-""")
+    Welcome to our website! 
+    
+    Here you can easily and quickly simplify fractions!
+    Are you struggling with reducing fractions to their 
+    simplest form? Do you find yourself spending too 
+    much time trying to simplify fractions by hand? 
+    Our website is here to help!
+    
+    With our user-friendly interface, you can input 
+    any fraction and simplify it within seconds. Our 
+    tool can simplify fractions with both whole 
+    numbers and decimals, and it can handle any size 
+    of fraction, no matter how large or small.
+    Our simplification process follows standard 
+    mathematical rules and ensures the most simplified 
+    form of the fraction. This makes it a valuable 
+    tool for students, teachers, and anyone who needs 
+    to simplify fractions on a regular basis.
+    
+    Best of all, our website is completely free to use, 
+    and there is no need to download any software. 
+    Simply visit our website and simply start simplifying 
+    fractions right away!
+    """)
 
 # ----------------------------
 # STREAMLIT PAGE BELOW
