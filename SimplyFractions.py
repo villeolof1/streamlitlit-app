@@ -66,7 +66,7 @@ if selected == "Home":
         fractions right away!
         """)
     with col2:
-        st.image("FractionSimplifiedImage.png")
+        st.image(fracsimpim)
 
 # ----------------------------
 # STREAMLIT PAGE BELOW
