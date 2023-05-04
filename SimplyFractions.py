@@ -37,9 +37,9 @@ with st.sidebar:
     )
 
 if selected == "Home":
-    st.title("Simply Simplifying Fractions")
     col1, col2 = st.columns(2)
     with col1:
+        st.title("Simply Simplifying Fractions")
         st.write("""
         Welcome to our website! 
         
