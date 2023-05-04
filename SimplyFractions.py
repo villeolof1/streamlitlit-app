@@ -12,6 +12,28 @@ st.set_page_config(page_title="SimplyFractions", page_icon="😮‍💨", layout
 fracsimpim = Image.open("FractionSimplifiedImage.png")
 pizzasimp = Image.open("PizzaSimplifyImage.png")
 
+st.markdown(
+    """<style>
+        .thick-divider {
+            border-top: 3px solid #999;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
+
+st.markdown("""
+    <style>
+        .streamlit-latex {
+            text-align: left;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
+
 
 #Use local CSS
 def local_css(file_name):
@@ -145,7 +167,5 @@ if selected == "Help!":
     left_column, right_column = st.columns(2)
     with left_column:
         st.markdown(contact_form, unsafe_allow_html = True)
-    #with right_column:
-        #st.empty()
 
 st.markdown("<p style='text-align: center;'>© SimplyFractions</p>", unsafe_allow_html=True)
