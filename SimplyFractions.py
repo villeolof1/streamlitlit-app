@@ -12,8 +12,6 @@ st.set_page_config(page_title="SimplyFractions", page_icon="😮‍💨", layout
 fracsimpim = Image.open("FractionSimplifiedImage.png")
 pizzasimp = Image.open("PizzaSimplifyImage.png")
 
-simp_bar = st.progress(0, text="Progressing...")
-
 st.markdown(
     """<style>
         .thick-divider {
@@ -113,6 +111,7 @@ if selected == "Home":
 # STREAMLIT PAGE BELOW
 # ----------------------------
 if selected == "Simplify Fractions":
+    simp_bar = st.progress(0, text="Progressing...")
     num = st.text_input("Numerator:")
     st.markdown('<hr class="thick-divider">', unsafe_allow_html=True)
     den = st.text_input("Denominator:")
