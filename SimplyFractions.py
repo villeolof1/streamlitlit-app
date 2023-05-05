@@ -63,7 +63,7 @@ def simplify(num, den) -> tuple:
             st.write("÷ " + str(divider) + " (Highest Common Factor)")
             num = num/divider
             den = den/divider
-            counter += 5
+            st.session_state["counter"] += 5
             break
             
     return num, den
