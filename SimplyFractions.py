@@ -12,13 +12,28 @@ st.set_page_config(page_title="SimplyFractions", page_icon="😮‍💨", layout
 fracsimpim = Image.open("FractionSimplifiedImage.png")
 pizzasimp = Image.open("PizzaSimplifyImage.png")
 
+st.markdown(
+    """<style>
+        .thick-divider {
+            border-top: 3px solid #999;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
+
 st.markdown("""
     <style>
         .streamlit-latex {
             text-align: left;
         }
     </style>
-""", unsafe_allow_html=True)
+        """, 
+    unsafe_allow_html=True,
+)
 
 
 
@@ -104,7 +119,7 @@ if selected == "Simplify Fractions":
         num_simple, den_simple = simplify(num, den)
         num_simple = int(num_simple)
         den_simple = int(den_simple)
-        st.latex(r'\frac{%s}{%s}' % (num_simple, den_simple))
+        st.latex(r'\frac{%s}{%s}' % (num_simple, den_simple), style="text-align: left")
 
         st.write("")
         st.write("")
