@@ -52,12 +52,13 @@ local_css("style/style.py")
 # DEFINE FUNCION FOR SIMPLIFY FRACTIONS
 # ----------------------------
 
-counter = 0
+if "counter" not in st.session_state:
+    st.session_state["counter"] = 0
 
 def simplify(num, den) -> tuple:
 
     for divider in range(np.minimum(num,den),1,-1):
-        simp_bar.progress(counter + 1, text="Progressing...")
+        simp_bar.progress(st.session_state["counter"] + 1, text="Progressing...")
         if (num/divider).is_integer() and (den/divider).is_integer():
             st.write("÷ " + str(divider) + " (Highest Common Factor)")
             num = num/divider
@@ -122,7 +123,7 @@ if selected == "Simplify Fractions":
         den = int(den)
         num = int(num)
         num_simple, den_simple = simplify(num, den)
-        if counter < 100:
+        if st.session_state["counter"] < 100:
             counter = 100
         num_simple = int(num_simple)
         den_simple = int(den_simple)
