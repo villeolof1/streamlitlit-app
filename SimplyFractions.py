@@ -123,9 +123,9 @@ if selected == "Simplify Fractions":
         den = int(den)
         num = int(num)
         num_simple, den_simple = simplify(num, den)
-        simp_bar.progress(st.session_state["counter"] + 1, text="Progressing...")
-        for i in range(1000):
-            st.session_state["counter"] += 1
+
+        for i in range(100):
+            simp_bar.progress(i + 1, text="Progressing...")
         num_simple = int(num_simple)
         den_simple = int(den_simple)
         st.latex(r'\frac{%s}{%s}' % (num_simple, den_simple))
