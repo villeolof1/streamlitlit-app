@@ -124,7 +124,7 @@ if selected == "Simplify Fractions":
         num = int(num)
         num_simple, den_simple = simplify(num, den)
         simp_bar.progress(st.session_state["counter"] + 1, text="Progressing...")
-        for i in range(100):
+        for i in range(1000):
             st.session_state["counter"] += 1
         num_simple = int(num_simple)
         den_simple = int(den_simple)
